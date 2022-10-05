@@ -27,14 +27,24 @@ const Header = () => {
 };
 
 const MainHeader = styled.div`
-  padding: 0 32px;
+  padding: 12px 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  height: 72px;
 `;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+`;
 
 const NavLink = styled.a`
   font-size: 1.125rem;
+  padding: 12px;
   text-transform: uppercase;
   text-decoration: none;
   color: ${COLORS.gray[900]};
